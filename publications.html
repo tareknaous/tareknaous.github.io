@@ -4,66 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1024, initial-scale=1.0">
     <title>Publications</title>
-    <style>
-        /* Basic styles for the navigation bar */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        .container {
-            width: 70%; /* Adjust the percentage as needed */
-            max-width: 1200px; /* Maximum width */
-        }
-        .navbar {
-            background-color: #333;
-            overflow: hidden;
-        }
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size: 18px; /* Adjust font size as needed */ 
-        }
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        /* Info + Picture content section */
-        .info-content {
-            display: flex;
-            justify-content: space-between; /* Space between text and image */
-            align-items: center; /* Align the image and text vertically */
-            padding: 40px;
-        }
-        .info-content img {
-            width: 200px; /* Size of the image */
-            height: 200px; /* Size of the image */
-            border-radius: 50%; /* Circular shape */
-            object-fit: cover; /* Ensures image covers the circle */
-        }
-        .info-content div {
-            max-width: 500px; /* Optional: limits text width */
-        }
-
-        /* Main content section */
-        .content {
-            width: 100%; /* Takes full width of the page */
-            max-width: 100%; /* Ensures it does not exceed the viewport */
-            padding: 20px; /* Adds spacing inside */
-            box-sizing: border-box; /* Ensures padding does not affect width */
-        }
-
-    li {
-    line-height: 1.4; /* Adjust for desired spacing */
-    }
-
-    </style>
+    <link rel="stylesheet" href="css/main.css">    
+    <link rel="stylesheet" href="css/publications.css">         
 </head>
 <body>
 
@@ -74,158 +16,194 @@
             <a href="index.html">Home</a>
             <a href="publications.html">Publications</a>
             <a href="resources.html">Resources</a>
-            <a href="fun.html">Fun</a>
         </div>
 
         <!-- Main content section -->
         <div class="content">
             <!-- Text content -->
             <div>
-            <h1><a name="publications">Publications</h1> 
-
             <ol>
 
                 <li>
                 <b>Flipping the Dialogue: Training and Evaluating User Language Models</b>
-                <br><a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>, Philippe Laban, Wei Xu, Jennifer Neville
+                <br><a class="author-name">Tarek Naous</a>, Philippe Laban, Wei Xu, Jennifer Neville
                 <br>
-                <i>arXiv 2025</i> [<a href="https://arxiv.org/pdf/2510.06552" style="color:#222a8f;">arXiv</a>]
+                <i>arXiv 2025</i>
+                <br>
+                <a href="https://arxiv.org/pdf/2510.06552" class="paper-box">paper</a>
                 </li>
                 <br>
 
 
                 <li>
                 <b>Camellia: Benchmarking Cultural Biases in LLMs for Asian Languages</b>
-                <br><a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>, Anagha Savit, Carlos Rafael Catalan, Geyang Guo, Jaehyeok Lee, Kyungdon Lee, Lheane Marie Dizon, Mengyu Ye, Neel Kothari, Sahajpreet Singh, Sarah Masud, Tanish Patwa, Trung Thanh Tran, Zohaib Khan, Alan Ritter, JinYeong Bak, Keisuke Sakaguchi, Tanmoy Chakraborty, Yuki Arase, Wei Xu
+                <br><a class="author-name">Tarek Naous</a>, Anagha Savit, Carlos Rafael Catalan, Geyang Guo, Jaehyeok Lee, Kyungdon Lee, Lheane Marie Dizon, Mengyu Ye, Neel Kothari, Sahajpreet Singh, Sarah Masud, Tanish Patwa, Trung Thanh Tran, Zohaib Khan, Alan Ritter, JinYeong Bak, Keisuke Sakaguchi, Tanmoy Chakraborty, Yuki Arase, Wei Xu
                 <br>
-                <i>arXiv 2025</i> [<a href="https://arxiv.org/pdf/2510.05291" style="color:#222a8f;">arXiv</a>]
+                <i>arXiv 2025</i>
+                <br>
+                <a href="https://arxiv.org/pdf/2510.05291" class="paper-box">paper</a>
                 </li>
                 <br>
 
 
                 <li>
                 <b>CARE: Multilingual Human Preference Learning for Cultural Awareness</b>
-                <br>Geyang Guo,<a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>, Hiromi Wakaki, Yukiko Nishimura, Yuki Mitsufuji, Alan Ritter, Wei Xu  
+                <br>Geyang Guo,<a class="author-name">Tarek Naous</a>, Hiromi Wakaki, Yukiko Nishimura, Yuki Mitsufuji, Alan Ritter, Wei Xu  
                 <br>
-                <i>EMNLP 2025</i> [<a href="https://aclanthology.org/2025.emnlp-main.1669.pdf" style="color:#222a8f;">Paper</a>]
+                <i>EMNLP 2025</i> 
+                <br>
+                <a href="https://aclanthology.org/2025.emnlp-main.1669.pdf" class="paper-box">paper</a>
                 </li>
                 <br>
 
                 <li>
                 <b>What are Foundation Models Cooking in the Post-Soviet World?</b>
-                <br>Anton Lavrouk,<a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>, Alan Ritter, Wei Xu  
+                <br>Anton Lavrouk,<a class="author-name">Tarek Naous</a>, Alan Ritter, Wei Xu  
                 <br>
-                <i>EMNLP 2025</i> [<a href="https://aclanthology.org/2025.emnlp-main.1044.pdf" style="color:#222a8f;">Paper</a>]
+                <i>EMNLP 2025</i>
+                <br>
+                <a href="https://aclanthology.org/2025.emnlp-main.1044.pdf" class="paper-box">paper</a>
                 </li>
                 <br>
                      
                 <li>
                 <b>On The Origin of Cultural Biases in Language Models: From Pre-training Data to Linguistic Phenomena</b>
-                <br><a style="color:#222a8f;font-weight: bold;">Tarek Naous</a> and Wei Xu
+                <br><a class="author-name">Tarek Naous</a> and Wei Xu
                 <br>
-                <i>NAACL 2025</i> [<a href="https://aclanthology.org/2025.naacl-long.326.pdf" style="color:#222a8f;">Paper</a>] [<a href="slides-papers/2025_naacl_origin_cultural_biases.pdf" style="color:#222a8f;">Slides</a>]
+                <i>NAACL 2025</i>
+                <br>
+                <a href="https://aclanthology.org/2025.naacl-long.326.pdf" class="paper-box">paper</a> 
+                <a href="slides-papers/2025_naacl_origin_cultural_biases.pdf" class="slides-box">Slides</a>
                 </li>
                 <br>
 
                 <li>
                 <b>Measuring, Modeling, and Helping People Account for Privacy Risks in Online Self-Disclosures with AI</b>
-                <br>Isadora Krsek, Anubha Kabra, Yao Dou, <a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>, Laura A Dabbish, Alan Ritter, Wei Xu, Sauvik Das
+                <br>Isadora Krsek, Anubha Kabra, Yao Dou, <a class="author-name">Tarek Naous</a>, Laura A Dabbish, Alan Ritter, Wei Xu, Sauvik Das
                 <br>
-                <i>CSCW 2025</i> [<a href="https://dl.acm.org/doi/abs/10.1145/3711029" style="color:#222a8f;">Paper</a>] [<a href="https://arxiv.org/pdf/2412.15047" style="color:#222a8f;">arXiv</a>]
+                <i>CSCW 2025</i>
+                <br>
+                <a href="https://arxiv.org/pdf/2412.15047" class="paper-box">paper</a>
                 </li>
                 <br>
 
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
                 <li>
                 <b>Having Beer after Prayer? Measuring Cultural Bias in Large Language Models</b>
-                <br><a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>, Michael Joseph Ryan, Alan Ritter, Wei Xu
+                <br><a class="author-name">Tarek Naous</a>, Michael Joseph Ryan, Alan Ritter, Wei Xu
                 <br>
-                <i>ACL 2024</i> [<a href="https://aclanthology.org/2024.acl-long.862.pdf" style="color:#222a8f;">Paper</a>] [<a href="https://venturebeat.com/ai/large-language-models-exhibit-significant-western-cultural-bias-study-finds/" style="color:#222a8f;">Press Article</a>] [<a href="slides-papers/2024_acl_having_beer_after_prayer.pdf" style="color:#222a8f;">Slides</a>]
+                <i>ACL 2024</i>
                 <br>
-                <span style="background-color: #01428c; font-weight: bold; 
-                padding: 4px 8px; border-radius: 20px; display: inline-block;">
-                <i class="fa-solid fa-trophy" style="color: gold;"></i> 
-                <a style="color: gold; text-decoration: none;">Best Social Impact Award</a>
+                <a href="https://aclanthology.org/2024.acl-long.862.pdf" class="paper-box">paper</a>
+                <a href="slides-papers/2024_acl_having_beer_after_prayer.pdf" class="slides-box">slides</a>
+                <a href="https://venturebeat.com/ai/large-language-models-exhibit-significant-western-cultural-bias-study-finds/" class="press-box">press</a>       
+                <br>
+
+                <span class="award-box">
+                    <i class="fa-solid fa-trophy"></i>
+                    Best Social Impact Award
                 </span>
+
+
                 </li>
                 <br>
 
                 <li>
                 <b>Reducing Privacy Risks in Online Self-Disclosures with Language Models</b>
-                <br>Yao Dou, Isadora Krsek, <a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>, Anubha Kabra, Sauvik Das, Alan Ritter, Wei Xu
+                <br>Yao Dou, Isadora Krsek, <a class="author-name">Tarek Naous</a>, Anubha Kabra, Sauvik Das, Alan Ritter, Wei Xu
                 <br>
-                <i>ACL 2024</i> [<a href="https://aclanthology.org/2024.acl-long.741.pdf" style="color:#222a8f;">Paper</a>]
+                <i>ACL 2024</i>
+                <br>
+                <a href="https://aclanthology.org/2024.acl-long.741.pdf" class="paper-box">paper</a>
                 </li>
                 <br>
 
                 <li>
                 <b>ReadMe++: Benchmarking Multilingual Language Models for Multi-Domain Readability Assessment</b>
-                <br><a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>, Michael Joseph Ryan, Anton Lavrouk, Mohit Chandra, Wei Xu
+                <br><a class="author-name">Tarek Naous</a>, Michael Joseph Ryan, Anton Lavrouk, Mohit Chandra, Wei Xu
                 <br>
-                <i>EMNLP 2024</i> [<a href="https://aclanthology.org/2024.emnlp-main.682.pdf" style="color:#222a8f;">Paper</a>] [<a href="slides-papers/2024_emnlp_readme.pdf" style="color:#222a8f;">Slides</a>]
+                <i>EMNLP 2024</i>
+                <br>
+                <a href="https://aclanthology.org/2024.emnlp-main.682.pdf" class="paper-box">paper</a>
+                <a href="slides-papers/2024_emnlp_readme.pdf" class="slides-box">slides</a>
                 </li>
                 <br> 
 
                 <li>
                 <b>Stanceosaurus 2.0: Classifying Stance Towards Russian and Spanish Misinformation</b>
-                <br>Anton Lavrouk, Ian Ligon, <a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>, Jonathan Zheng, Alan Ritter, Wei Xu
+                <br>Anton Lavrouk, Ian Ligon, <a class="author-name">Tarek Naous</a>, Jonathan Zheng, Alan Ritter, Wei Xu
                 <br>
-                <i>W-NUT 2024</i> [<a href="https://aclanthology.org/2024.wnut-1.4.pdf" style="color:#222a8f;">Paper</a>]
+                <i>W-NUT 2024</i>
+                <br>
+                <a href="https://aclanthology.org/2024.wnut-1.4.pdf" class="paper-box">paper</a>
                 </li>
                 <br>
 
                 <li>
                 <b>Revisiting non-English Text Simplification: A Unified Multilingual Benchmark</b>
-                <br>Michael Joseph Ryan, <a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>, Wei Xu
+                <br>Michael Joseph Ryan, <a class="author-name">Tarek Naous</a>, Wei Xu
                 <br>
-                <i>ACL 2023</i> [<a href="https://aclanthology.org/2023.acl-long.269.pdf" style="color:#222a8f;">Paper</a>]
+                <i>ACL 2023</i>
                 <br>
-                <span style="background-color: #01428c; font-weight: bold; 
-                padding: 4px 8px; border-radius: 20px; display: inline-block;">
-                <i class="fa-solid fa-trophy" style="color: gold;"></i> 
-                <a style="color: gold; text-decoration: none;">Best Paper Award Honorable Mention</a>
+                <a href="https://aclanthology.org/2023.acl-long.269.pdf" class="paper-box">paper</a>
+                <br>
+
+                <span class="award-box">
+                <i class="fa-solid fa-trophy"></i>
+                    Best Paper Award Honorable Mention
                 </span>
+
                 </li>
                 <br>
 
                 <li>
                 <b>Stanceosaurus: Classifying Stance Towards Multilingual Misinformation</b>
-                <br>Jonathan Zheng, Ashutosh Baheti, <a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>, Wei Xu, Alan Ritter
+                <br>Jonathan Zheng, Ashutosh Baheti, <a class="author-name">Tarek Naous</a>, Wei Xu, Alan Ritter
                 <br>
-                <i>EMNLP 2022</i> [<a href="https://aclanthology.org/2022.emnlp-main.138.pdf" style="color:#222a8f;">Paper</a>]
+                <i>EMNLP 2022</i>
+                <br>
+                <a href="https://aclanthology.org/2022.emnlp-main.138.pdf" class="paper-box">paper</a>
                 </li>
                 <br>
 
                 <li>
                 <b>Clustering  Plotted Data by Image Segmentation</b>
-                <br><a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>, Srinjay Sarkar, Abubakar Abid, James Zou
+                <br><a class="author-name">Tarek Naous</a>, Srinjay Sarkar, Abubakar Abid, James Zou
                 <br>
-                <i>CVPR 2022</i> [<a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Naous_Clustering_Plotted_Data_by_Image_Segmentation_CVPR_2022_paper.pdf" style="color:#222a8f;">Paper</a>]
+                <i>CVPR 2022</i>
+                <br>
+                <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Naous_Clustering_Plotted_Data_by_Image_Segmentation_CVPR_2022_paper.pdf" class="paper-box">paper</a>
                 </li>
                 <br>
 
                 <li>
                 <b>Open-Domain Response Generation in Low-Resource Settings using Self-Supervised Pre-training of Warm-Started Transformers</b>
-                <br><a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>,  Zahraa Bassyouni,  Bassel Mousi, Hazem Hajj, Wassim El Hajj, Khaled Shaban
+                <br><a class="author-name">Tarek Naous</a>,  Zahraa Bassyouni,  Bassel Mousi, Hazem Hajj, Wassim El Hajj, Khaled Shaban
                 <br>
-                <i>ACM TALLIP 2022</i> [<a href="https://dl.acm.org/doi/full/10.1145/3579164" style="color:#222a8f;">Paper</a>]
+                <i>ACM TALLIP 2022</i>
+                <br>
+                <a href="https://dl.acm.org/doi/full/10.1145/3579164" class="paper-box">paper</a>
                 </li>
                 <br>
 
 
                 <li>
                 <b>Empathetic BERT2BERT Conversational Model: Learning Arabic Language Generation with Little Data</b>
-                <br><a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>, Wissam Antoun, Reem A. Mahmoud, Hazem Hajj
+                <br><a class="author-name">Tarek Naous</a>, Wissam Antoun, Reem A. Mahmoud, Hazem Hajj
                 <br>
-                <i>WANLP 2021</i> [<a href="https://aclanthology.org/2021.wanlp-1.17.pdf" style="color:#222a8f;">Paper</a>]
+                <i>WANLP 2021</i>
+                <br>
+                <a href="https://aclanthology.org/2021.wanlp-1.17.pdf" class="paper-box">paper</a>
                 </li>
                 <br>
 
                 <li>
                 <b>Empathy-driven Arabic Conversational Chatbot</b>
-                <br><a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>, Christian Hokayem, Hazem Hajj
+                <br><a class="author-name">Tarek Naous</a>, Christian Hokayem, Hazem Hajj
                 <br>
-                <i>WANLP 2020</i> [<a href="https://aclanthology.org/2020.wanlp-1.6.pdf" style="color:#222a8f;">Paper</a>]
+                <i>WANLP 2020</i>
+                <br>
+                <a href="https://aclanthology.org/2020.wanlp-1.6.pdf" class="paper-box">paper</a>
                 </li>
                 <br>
 
@@ -239,58 +217,75 @@
 
                     <li>
                         <b>Reinforcement Learning in the Sky: A Survey on Enabling Intelligence in NTN-Based Communications</b>
-                        <br><a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>, May Itani, Mariette Awad, Sanaa Sharafeddine
-                        <br><i>IEEE Access</i>, Jan. 2023 [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10016705" style="color:#222a8f;">Paper</a>]
+                        <br><a class="author-name">Tarek Naous</a>, May Itani, Mariette Awad, Sanaa Sharafeddine
+                        <br><i>IEEE Access</i>, Jan. 2023
+                        <br>
+                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10016705" class="paper-box">paper</a>
+
                     </li>
                     <br>
 
 
                     <li>
                         <b>Machine Learning-Aided Design of Dielectric-Filled Slotted Waveguide Antennas with Specified Sidelobe Levels</b>
-                        <br><a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>, Amen Al Merie , Salwa K. Al Khatib,  Mohammed Al Husseini,  Raed M. Shubair, Hilal M. El Misilmani
-                        <br><i>IEEE Access</i>, Mar. 2022 [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9733372" style="color:#222a8f;">Paper</a>]
+                        <br><a class="author-name">Tarek Naous</a>, Amen Al Merie , Salwa K. Al Khatib,  Mohammed Al Husseini,  Raed M. Shubair, Hilal M. El Misilmani
+                        <br><i>IEEE Access</i>, Mar. 2022 
+                        <br>
+                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9733372" class="paper-box">paper</a>
                     </li>
                     <br>
 
                     <li>
                         <b>A Survey on Blockchain-Based Recommender Systems: Integration Architecture and Taxonomy </b>
-                        <br>Loubna  Mekouar, Youssef Iraqi, Issam Damaj, <a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>
-                        <br><i>Computer Communications</i>, Apr. 2022 [<a href="https://www.sciencedirect.com/science/article/pii/S0140366422000342" style="color:#222a8f;">Paper</a>]
+                        <br>Loubna  Mekouar, Youssef Iraqi, Issam Damaj, <a class="author-name">Tarek Naous</a>
+                        <br><i>Computer Communications</i>, Apr. 2022 
+                        <br>
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0140366422000342" class="paper-box">paper</a>
                     </li>
                     <br>
 
                     <li>
                         <b>A Deep Learning Framework for Breast Tumor Detection and Localization from Microwave Imaging Data </b>
-                        <br>Salwa K. Al Khatib, <a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>, Raed M. Shubair, Hilal M. El Misilmani
-                        <br><i>IEEE International Conference on Electronics, Circuits, and Systems</i>, 2021 [<a href="https://ieeexplore.ieee.org/abstract/document/9665521" style="color:#222a8f;">Paper</a>]
+                        <br>Salwa K. Al Khatib, <a class="author-name">Tarek Naous</a>, Raed M. Shubair, Hilal M. El Misilmani
+                        <br><i>IEEE International Conference on Electronics, Circuits, and Systems</i>, 2021 
+                        <br>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/9665521" class="paper-box">paper</a>
                     </li>
                     <br>
 
                     <li>
                         <b>Radiation Analysis in a Gradual 5G Network Deployment Strategy</b>
-                        <br>Ahmad M. El Hajj, <a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>
-                        <br><i>IEEE 5G World Forum (5GWF)</i>, 2020 [<a href="https://ieeexplore.ieee.org/document/9221314" style="color:#222a8f;">Paper</a>] [<a href="https://ehtrust.org/high-radiation-from-millimeter-wave-5g-deployment-in-austin-texas/" style="color:#222a8f;">Press Article</a>]
+                        <br>Ahmad M. El Hajj, <a class="author-name">Tarek Naous</a>
+                        <br><i>IEEE 5G World Forum (5GWF)</i>, 2020 
+                        <br>
+                        <a href="https://ieeexplore.ieee.org/document/9221314" class="paper-box">paper</a> <a href="https://ehtrust.org/high-radiation-from-millimeter-wave-5g-deployment-in-austin-texas/" class="press-box">press</a>
                     </li>
                     <br>
 
                     <li>
                         <b>A Review on the Design and Optimization of Antennas Using Machine Learning Algorithms and Techniques</b>
-                        <br>Hilal M. El Misilmani, <a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>, Salwa K. Al Khatib
-                        <br><i>International Journal of RF and Microwave Computer-Aided Engineering</i>, Jul. 2020 [<a href="https://onlinelibrary.wiley.com/doi/full/10.1002/mmce.22356" style="color:#222a8f;">Paper</a>] 
+                        <br>Hilal M. El Misilmani, <a class="author-name">Tarek Naous</a>, Salwa K. Al Khatib
+                        <br><i>International Journal of RF and Microwave Computer-Aided Engineering</i>, Jul. 2020 
+                        <br>
+                        <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/mmce.22356" class="paper-box">paper</a>
                     </li>
                     <br>
 
                     <li>
                         <b>A Survey on Antenna Designs for Breast Cancer Detection Using Microwave Imaging</b>
-                        <br>Hilal M. El Misilmani, <a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>, Salwa K. Al Khatib, and Karim Y. Kabalan
-                        <br><i>IEEE Access</i>, Jun. 2020 [<a href="https://ieeexplore.ieee.org/document/9104688" style="color:#222a8f;">Paper</a>] 
+                        <br>Hilal M. El Misilmani, <a class="author-name">Tarek Naous</a>, Salwa K. Al Khatib, and Karim Y. Kabalan
+                        <br><i>IEEE Access</i>, Jun. 2020 
+                        <br>
+                        <a href="https://ieeexplore.ieee.org/document/9104688" class="paper-box">paper</a>
                     </li>
                     <br>
 
                     <li>
                         <b>Machine Learning in Antenna Design: An Overview on Machine Learning Concept and Algorithms</b>
-                        <br>Hilal M. El Misilmani and <a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>
-                        <br><i>International Conference on High Performance Computing & Simulation</i>, 2019 [<a href="https://ieeexplore.ieee.org/document/9188224" style="color:#222a8f;">Paper</a>] 
+                        <br>Hilal M. El Misilmani and <a class="author-name">Tarek Naous</a>
+                        <br><i>International Conference on High Performance Computing & Simulation</i>, 2019 
+                        <br>
+                        <a href="https://ieeexplore.ieee.org/document/9188224" class="paper-box">paper</a>
                     </li>
                     <br>
 
@@ -304,8 +299,10 @@
 
                     <li>
                         <b>Modular Hydrocarbon Facility Placement Planning System With Machine Learning Well Trajectory Optimization</b>
-                        <br>Kassem Ghorayeb, Hussein Hayek,  Ahmad Harb, <a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>
-                        <br><i>US Patent US20240346608A1</i>, Oct. 2024 [<a href="https://patents.google.com/patent/US20240346608A1/en" style="color:#222a8f;">Patent</a>]
+                        <br>Kassem Ghorayeb, Hussein Hayek,  Ahmad Harb, <a class="author-name">Tarek Naous</a>
+                        <br><i>US Patent US20240346608A1</i>, Oct. 2024 
+                        <br>
+                        <a href="https://patents.google.com/patent/US20240346608A1/en" class="paper-box">patent</a>
                     </li>
 
 
@@ -313,8 +310,10 @@
 
                     <li>
                         <b>Bridging the integration gap — simultaneous optimization of well placement, well trajectory, and facility layout</b>
-                        <br>Kassem Ghorayeb, Hussein Hayek, Ahmad Harb, Haytham M Dbouk, <a style="color:#222a8f;font-weight: bold;">Tarek Naous</a>, Anthony Ayoub, Richard Torrens, Owen Wells 
-                        <br><i>Journal of Petroleum Science and Engineering</i>, Jan. 2023 [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0920410522010749" style="color:#222a8f;">Paper</a>]
+                        <br>Kassem Ghorayeb, Hussein Hayek, Ahmad Harb, Haytham M Dbouk, <a class="author-name">Tarek Naous</a>, Anthony Ayoub, Richard Torrens, Owen Wells 
+                        <br><i>Journal of Petroleum Science and Engineering</i>, Jan. 2023
+                        <br>
+                         <a href="https://www.sciencedirect.com/science/article/abs/pii/S0920410522010749" class="paper-box">paper</a>
                     </li>
 
 

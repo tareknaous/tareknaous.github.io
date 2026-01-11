@@ -3,66 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1024, initial-scale=1.0">
-    <style>
-        /* Basic styles for the navigation bar */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        .container {
-            width: 70%; /* Adjust the percentage as needed */
-            max-width: 1200px; /* Maximum width */
-        }
-        .navbar {
-            background-color: #333;
-            overflow: hidden;
-        }
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size: 18px; /* Adjust font size as needed */ 
-        }
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        /* Info + Picture content section */
-        .info-content {
-            display: flex;
-            justify-content: space-between; /* Space between text and image */
-            align-items: center; /* Align the image and text vertically */
-            padding: 40px;
-        }
-        .info-content img {
-            width: 200px; /* Size of the image */
-            height: 200px; /* Size of the image */
-            border-radius: 50%; /* Circular shape */
-            object-fit: cover; /* Ensures image covers the circle */
-        }
-        .info-content div {
-            max-width: 500px; /* Optional: limits text width */
-        }
 
-        /* Main content section */
-        .content {
-            width: 100%; /* Takes full width of the page */
-            max-width: 100%; /* Ensures it does not exceed the viewport */
-            padding: 20px; /* Adds spacing inside */
-            box-sizing: border-box; /* Ensures padding does not affect width */
-        }
+    <link rel="stylesheet" href="css/main.css">    
+    <link rel="stylesheet" href="css/resources.css">  
 
-    li {
-    line-height: 1.4; /* Adjust for desired spacing */
-    }
-
-    </style>
 </head>
 <body>
 
@@ -73,19 +17,21 @@
             <a href="index.html">Home</a>
             <a href="publications.html">Publications</a>
             <a href="resources.html">Resources</a>
-            <a href="fun.html">Fun</a>
         </div>
 
         <!-- Main content section -->
         <div class="content">
             <!-- Text content -->
-            <div>
-            <h2><a name="resources"> &#128203; NLP Reading List</h2> 
-                <p>I keep track in <a href="https://github.com/tareknaous/nlp-reading-list/wiki" style="color:#222a8f;">this list</a> of papers I've enjoyed reading on various topics in NLP including:</p>
-                <p> <a href="https://github.com/tareknaous/nlp-reading-list/wiki/Tokenization" style="color:#222a8f;">Tokenization</a>, <a href="https://github.com/tareknaous/nlp-reading-list/wiki/Decoding" style="color:#222a8f;">Decoding</a>, <a href="https://github.com/tareknaous/nlp-reading-list/wiki/Language-Modeling" style="color:#222a8f;">Language Modeling</a>, <a href="https://github.com/tareknaous/nlp-reading-list/wiki/Multi%E2%80%90turn-LLM-Evaluation" style="color:#222a8f;">Multi-Turn Evaluation</a>, and more!</p>
+            <div class="reading-list-box">
+                <h2><a name="resources"> &#128203; NLP Reading List</a></h2> 
+                <p>I keep track in <a href="https://github.com/tareknaous/nlp-reading-list/wiki" class="text-hyperlink">this list</a> of papers I've enjoyed reading on various topics in NLP including:</p>
+                <p>
+                    <a href="https://github.com/tareknaous/nlp-reading-list/wiki/Tokenization" class="text-hyperlink"> Tokenization</a>, 
+                    <a href="https://github.com/tareknaous/nlp-reading-list/wiki/Decoding" class="text-hyperlink">Decoding</a>, 
+                    <a href="https://github.com/tareknaous/nlp-reading-list/wiki/Language-Modeling" class="text-hyperlink">Language Modeling</a>, 
+                    <a href="https://github.com/tareknaous/nlp-reading-list/wiki/Multi%E2%80%90turn-LLM-Evaluation" class="text-hyperlink">Multi-Turn Evaluation</a>, and more!
+                </p>
                 <p>If you have a recommendation I should add, I’d love to hear from you — feel free to send me an email!</p>
-
- 
             </div>
         </div>
 </body>

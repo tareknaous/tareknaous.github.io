@@ -1,0 +1,95 @@
+/*Styling for my name in author list*/
+.author-name {
+    color: #0071da;      /* same color you had inline */
+    font-weight: bold;    /* bold text */
+    text-decoration: none; /* optional: remove underline if any */
+}
+
+/* Styling for the article link */
+
+.paper-box {
+    display: inline-block;
+    padding: 2px 6px;   
+    background-color: #0071da;
+    color: #fdf9f0;
+    font-weight: bold;
+    font-size: 0.85em;  
+    text-decoration: none;
+    border-radius: 8px; 
+    transition: all 0.3s ease;
+    border: 2px solid #0071da;  /* border same as background initially */
+}
+
+.paper-box:hover {
+    background-color: #fdf9f0;
+    color: #0071da;
+    border: 2px solid #0071da;  /* keeps a border even on hover */
+}
+
+/* Styling for the slides link */
+
+
+.slides-box {
+    display: inline-block;
+    padding: 2px 6px;   
+    background-color: #fdf9f0;  /* light background */
+    color: #EE1F60;             /* dark text */
+    font-weight: bold;
+    font-size: 0.85em;  
+    text-decoration: none;
+    border-radius: 8px; 
+    border: 2px solid #EE1F60; /* visible border by default */
+    transition: all 0.3s ease;
+}
+
+.slides-box:hover {
+    background-color: #EE1F60;  /* dark background on hover */
+    color: #fdf9f0;             /* light text on hover */
+    border: 2px solid #EE1F60;  /* border flips to light */
+}
+
+/* Styling for the press article link */
+
+.press-box {
+    display: inline-block;
+    padding: 2px 6px;   
+    background-color: #fdf9f0;  /* light background */
+    color: #7CAD76;             /* dark text */
+    font-weight: bold;
+    font-size: 0.85em;  
+    text-decoration: none;
+    border-radius: 8px; 
+    border: 2px solid #7CAD76; /* visible border by default */
+    transition: all 0.3s ease;
+}
+
+.press-box:hover {
+    background-color: #7CAD76;  /* dark background on hover */
+    color: #fdf9f0;             /* light text on hover */
+    border: 2px solid #7CAD76;  /* border flips to light */
+}
+
+/* Styling for the paper award box */
+
+.award-box {
+    display: inline-block;
+    padding: 3px 6px;
+    background-color: #fdf9f0;
+    color: #d35400;
+    font-weight: bold;
+    border: 2px solid #d35400;
+    border-radius: 20px;
+    text-decoration: none;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+    margin-top: 8px;   /* space above */
+}
+.award-box i {
+    color: gold;   /* trophy icon color */
+    margin-right: 6px;
+}
+
+/* Optional hover: subtle background change */
+.award-box:hover {
+    background-color: #fbe8d5;    /* slightly darker/tinted background on hover */
+}

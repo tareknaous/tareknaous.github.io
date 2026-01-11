@@ -1,0 +1,10 @@
+.reading-list-box {
+    border: 2px solid #c4820e;      /* border similar to news box */
+    background-color: #fdf9f0;      /* light interior */
+    border-radius: 12px;            /* rounded corners */
+    padding: 16px;                  /* space inside the box */
+    margin: 12px 0;                 /* spacing above/below */
+    transition: all 0.3s ease;
+}
+
+ 

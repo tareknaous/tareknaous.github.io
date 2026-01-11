@@ -1,0 +1,98 @@
+/* Basic styles for the navigation bar */
+body {
+    font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 70%; /* Adjust the percentage as needed */
+    max-width: 1200px; /* Maximum width */
+}
+
+/* Styling for the navigation bar */
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px; /* Adjust font size as needed */ 
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Info + Picture content section */
+
+.info-content {
+    display: flex;
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Align the image and text vertically */
+    padding: 40px;
+}
+.info-content img {
+    width: 200px; /* Size of the image */
+    height: 200px; /* Size of the image */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Ensures image covers the circle */
+}
+.info-content div {
+    max-width: 500px; /* Optional: limits text width */
+}
+
+/* Style for the hyperlink of the text */
+
+.text-hyperlink {
+    color: #1a4cff;
+    text-decoration: none;
+    padding: 0.05em 0.15em;      /* gives the highlight some breathing room */
+    border-radius: 3px;
+    transition: background-color 0.15s ease;
+}
+
+.text-hyperlink:hover {
+    background-color: #dff3ff;  /* light cyan highlight */
+}
+
+/* Styling for news box */
+.news-box p {
+margin: 8px 0;   /* tighten vertical spacing */
+}
+
+.news-box .news-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+/* Styling for the dates in recent news */
+
+.date-chip {
+    display: inline-block;
+    padding: 2px 8px;
+    margin-right: 8px;
+    font-size: inherit;          /* same font size as text */
+    font-weight: bold;        /* same weight as text */
+    color: inherit;              /* same text color */
+    background-color: #ffe4ad;   /* soft version of your gold tone */
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+
+/* Main content section */
+.content {
+    width: 100%; /* Takes full width of the page */
+    max-width: 100%; /* Ensures it does not exceed the viewport */
+    padding: 20px; /* Adds spacing inside */
+    box-sizing: border-box; /* Ensures padding does not affect width */
+    line-height: 1.4;  /* Adjust line spacing */
+    text-align: justify; 
+}
