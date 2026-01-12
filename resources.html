@@ -17,6 +17,7 @@
             <a href="index.html">Home</a>
             <a href="publications.html">Publications</a>
             <a href="resources.html">Resources</a>
+            <a href="fun.html">Fun</a>  
         </div>
 
         <!-- Main content section -->
@@ -25,13 +26,160 @@
             <div class="reading-list-box">
                 <h2><a name="resources"> &#128203; NLP Reading List</a></h2> 
                 <p>I keep track in <a href="https://github.com/tareknaous/nlp-reading-list/wiki" class="text-hyperlink">this list</a> of papers I've enjoyed reading on various topics in NLP including:</p>
-                <p>
-                    <a href="https://github.com/tareknaous/nlp-reading-list/wiki/Tokenization" class="text-hyperlink"> Tokenization</a>, 
-                    <a href="https://github.com/tareknaous/nlp-reading-list/wiki/Decoding" class="text-hyperlink">Decoding</a>, 
-                    <a href="https://github.com/tareknaous/nlp-reading-list/wiki/Language-Modeling" class="text-hyperlink">Language Modeling</a>, 
-                    <a href="https://github.com/tareknaous/nlp-reading-list/wiki/Multi%E2%80%90turn-LLM-Evaluation" class="text-hyperlink">Multi-Turn Evaluation</a>, and more!
-                </p>
-                <p>If you have a recommendation I should add, I’d love to hear from you — feel free to send me an email!</p>
+
+
+
+<p>
+    <a href="https://github.com/tareknaous/nlp-reading-list/wiki/Tokenization" class="text-hyperlink"> Tokenization</a>: <i>how do we efficiently represent text as inputs to a neural network?</i>
+
+<div class="demo token-demo">
+  <span class="word">
+    <span class="tok t1">To</span><span class="tok t2">ken</span><span class="tok t3">iz</span><span class="tok t4">er</span>
+  </span>
+  <span class="word">
+    <span class="tok t5">▁be</span><span class="tok t6">hav</span><span class="tok t7">ior</span>
+  </span>
+  <span class="word">
+    <span class="tok t8">▁that</span>
+  </span>
+  <span class="word">
+    <span class="tok t10">▁ke</span><span class="tok t11">ep</span><span class="tok t12">s</span>
+  </span>
+  <span class="word">
+    <span class="tok t13">▁m</span><span class="tok t14">e</span>
+  </span>
+  <span class="word">
+    <span class="tok t15">▁u</span><span class="tok t16">p</span>
+  </span>
+  <span class="word">
+    <span class="tok t17">▁at</span>
+  </span>
+  <span class="word">
+    <span class="tok t19">▁ni</span><span class="tok t20">gh</span><span class="tok t21">t</span>
+  </span>
+</div>
+
+<br>
+<a href="https://github.com/tareknaous/nlp-reading-list/wiki/Language-Modeling" class="text-hyperlink">Language Modeling</a>: <i>how do we predict the next token given a context?</i>
+<br>
+
+<div class="lm-demo">
+  <div class="lm-title">
+    <br>
+    P(next token | <span class="ctx">pineapple on pizza is</span>)
+  </div>
+
+
+  <div class="lm-row">
+    <span class="lm-token">controversial</span>
+    <div class="lm-bar w32"></div>
+    <span class="lm-prob">0.32</span>
+  </div>
+
+  <div class="lm-row">
+    <span class="lm-token">illegal</span>
+    <div class="lm-bar w45"></div>
+    <span class="lm-prob">0.45</span>
+  </div>
+
+  <div class="lm-row">
+    <span class="lm-token">fine</span>
+    <div class="lm-bar w08"></div>
+    <span class="lm-prob">0.08</span>
+  </div>
+
+
+  <div class="lm-row">
+    <span class="lm-token">delicious</span>
+    <div class="lm-bar w15"></div>
+    <span class="lm-prob">0.15</span>
+  </div>
+
+</div>
+</p>
+
+
+
+
+<a href="https://github.com/tareknaous/nlp-reading-list/wiki/Decoding" class="text-hyperlink">Decoding</a>: <i>how do we choose tokens from the most likely outputs from a distribution?</i>
+
+<div class="decoding-tree-demo">
+  <svg width="500" height="200">
+    <!-- Root node -->
+    <g class="node">
+      <rect x="10" y="90" width="140" height="24" rx="4" ry="4" fill="#fde68a"/>
+      <text x="80" y="102" text-anchor="middle" alignment-baseline="middle">All roads lead to</text>
+    </g>
+
+    <!-- Step 1 nodes -->
+    <g class="node">
+      <rect x="180" y="20" width="60" height="24" rx="4" ry="4" fill="#60a5fa"/>
+      <text x="210" y="32" text-anchor="middle" alignment-baseline="middle">Rome</text>
+    </g>
+
+    <g class="node">
+      <rect x="180" y="90" width="40" height="24" rx="4" ry="4" fill="#fca5a5"/>
+      <text x="200" y="102" text-anchor="middle" alignment-baseline="middle">my</text>
+    </g>
+
+    <g class="node">
+      <rect x="180" y="160" width="40" height="24" rx="4" ry="4" fill="#c8a2c8"/>
+      <text x="200" y="172" text-anchor="middle" alignment-baseline="middle">insta</text>
+    </g>
+
+    <!-- Step 2 nodes for "my" -->
+    <g class="node">
+      <rect x="300" y="70" width="80" height="24" rx="4" ry="4" fill="#fca5a5"/>
+      <text x="340" y="82" text-anchor="middle" alignment-baseline="middle">fridge</text>
+    </g>
+
+    <g class="node">
+      <rect x="300" y="110" width="90" height="24" rx="4" ry="4" fill="#fca5a5"/>
+      <text x="345" y="122" text-anchor="middle" alignment-baseline="middle">kitchen</text>
+    </g>
+
+    <!-- Step 2 node for "insta" -->
+    <g class="node">
+      <rect x="300" y="160" width="60" height="24" rx="4" ry="4" fill="#c8a2c8"/>
+      <text x="330" y="172" text-anchor="middle" alignment-baseline="middle">reels</text>
+    </g>
+
+    <!-- Lines from root to Step 1 -->
+    <line x1="150" y1="102" x2="180" y2="32" stroke="#000"/>
+    <line x1="150" y1="102" x2="180" y2="102" stroke="#000"/>
+    <line x1="150" y1="102" x2="180" y2="172" stroke="#000"/>
+
+    <!-- Probabilities for Step 1 -->
+    <text x="150" y="60" font-size="12" text-anchor="middle" fill="#000">0.5</text>
+    <text x="170" y="95" font-size="12" text-anchor="middle" fill="#000">0.3</text>
+    <text x="150" y="145" font-size="12" text-anchor="middle" fill="#000">0.2</text>
+
+    <!-- Lines from "my" to Step 2 -->
+    <line x1="220" y1="102" x2="300" y2="82" stroke="#000"/>
+    <line x1="220" y1="102" x2="300" y2="122" stroke="#000"/>
+
+    <!-- Probabilities for "my" branches -->
+    <text x="260" y="85" font-size="12" text-anchor="middle" fill="#000">0.6</text>
+    <text x="260" y="130" font-size="12" text-anchor="middle" fill="#000">0.4</text>
+
+    <!-- Line from "insta" to Step 2 -->
+    <line x1="220" y1="172" x2="300" y2="172" stroke="#000"/>
+
+    <!-- Probability for "insta" branch -->
+    <text x="260" y="165" font-size="12" text-anchor="middle" fill="#000">1.0</text>
+  </svg>
+</div>
+
+
+
+
+
+
+
+
+<p>If you have a paper recommendation, I’d love to hear from you — feel free to send me an email!</p>
+
+
             </div>
         </div>
 </body>

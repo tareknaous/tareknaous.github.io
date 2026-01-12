@@ -7,4 +7,98 @@
     transition: all 0.3s ease;
 }
 
+
+/*Styling for the tokenizer*/
  
+.token-demo {
+  font-family: monospace;
+}
+
+.word {
+  display: inline-block;
+  margin-right: 6px; /* space between words */
+}
+
+.tok {
+  padding: 2px 4px;
+  border-radius: 0px;
+}
+
+/* Auto-cycle token colors */
+.tok:nth-child(5n+1) { background: #fde68a; }
+.tok:nth-child(5n+2) { background: #a7f3d0; }
+.tok:nth-child(5n+3) { background: #bfdbfe; }
+.tok:nth-child(5n+4) { background: #fecaca; }
+.tok:nth-child(5n)   { background: #ddd6fe; }
+
+
+/*Styling for the LLM next token prediction*/
+
+.lm-demo {
+  font-family: monospace;
+  font-size: 0.9em;
+  max-width: 420px;
+}
+
+.lm-title {
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.ctx {
+  background: #fef3c7;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.lm-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+.lm-token {
+  width: 110px;
+}
+
+.lm-bar {
+  height: 8px;
+  border-radius: 4px;
+  background: #60a5fa;
+}
+
+.w45 { width: 120px; }
+.w32 { width: 85px; }
+.w15 { width: 40px; }
+.w08 { width: 22px; }
+
+.lm-prob {
+  color: #555;
+}
+
+
+/*Styling for decoding*/
+
+.decoding-tree-demo {
+  font-family: monospace;
+  font-size: 0.9em;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.ctx {
+  background: #fef3c7;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.node-greedy {
+  fill: #60a5fa;
+  font-weight: bold;
+}
+
+.node-sample {
+  fill: #fca5a5;
+}
+
