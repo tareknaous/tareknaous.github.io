@@ -69,27 +69,30 @@
     border: 2px solid #7CAD76;  /* border flips to light */
 }
 
+
 /* Styling for the paper award box */
 
 .award-box {
     display: inline-block;
-    padding: 3px 6px;
+    padding: 2px 5px;          /* ↓ smaller padding */
     background-color: #fdf9f0;
     color: #d35400;
     font-weight: bold;
-    border: 2px solid #d35400;
-    border-radius: 20px;
+    font-size: 0.9em;         /* ↓ slightly smaller text */
+    border: 2px solid #d35400; /* ↓ thinner border */
+    border-radius: 18px;       /* ↓ slightly smaller rounding */
     text-decoration: none;
     vertical-align: middle;
     transition: all 0.3s ease;
-    margin-top: 8px;   /* space above */
-}
-.award-box i {
-    color: gold;   /* trophy icon color */
-    margin-right: 6px;
+    margin-top: 1px;           /* ↓ slightly less spacing */
 }
 
-/* Optional hover: subtle background change */
+.award-box i {
+    color: gold;
+    margin-right: 4px;         /* ↓ tighter icon spacing */
+    font-size: 0.9em;          /* ↓ smaller icon */
+}
+
 .award-box:hover {
-    background-color: #fbe8d5;    /* slightly darker/tinted background on hover */
+    background-color: #fbe8d5;
 }
