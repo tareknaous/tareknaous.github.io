@@ -63,6 +63,28 @@
     transition: all 0.3s ease;
 }
 
+
+/* Styling for the video box */
+
+.video-box {
+    display: inline-block;
+    padding: 2px 6px;   
+    background-color: #fdf9f0;   /* light background */
+    color: #7B4B94;              /* purple text */
+    font-weight: bold;
+    font-size: 0.85em;  
+    text-decoration: none;
+    border-radius: 8px; 
+    border: 2px solid #7B4B94;   /* purple border */
+    transition: all 0.3s ease;
+}
+
+.video-box:hover {
+    background-color: #7B4B94;   /* purple background on hover */
+    color: #fdf9f0;              /* light text */
+    border: 2px solid #7B4B94;
+}
+
 .press-box:hover {
     background-color: #7CAD76;  /* dark background on hover */
     color: #fdf9f0;             /* light text on hover */
